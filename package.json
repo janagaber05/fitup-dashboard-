@@ -1,0 +1,10 @@
+{
+  "name": "dashboard-fitup-web",
+  "private": true,
+  "description": "Run scripts from repo root; app lives in my-app/",
+  "scripts": {
+    "start": "npm start --prefix my-app",
+    "build": "npm run build --prefix my-app",
+    "test": "npm test --prefix my-app"
+  }
+}

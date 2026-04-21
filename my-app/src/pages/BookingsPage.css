@@ -1,0 +1,229 @@
+.bookPg__gridCard h2 {
+  margin: 0 0 14px;
+  font-size: 16px;
+}
+
+.bookPg__gridWrap {
+  overflow: auto;
+}
+
+.bookPg__grid {
+  min-width: 860px;
+  display: grid;
+  grid-template-columns: 82px repeat(7, minmax(105px, 1fr));
+  gap: 8px;
+}
+
+.bookPg__timeHead,
+.bookPg__dayHead,
+.bookPg__timeCol,
+.bookPg__cell {
+  border-radius: 10px;
+}
+
+.bookPg__dayHead {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--fu-border);
+  text-align: center;
+  font-size: 12px;
+  color: #c7cedd;
+  padding: 8px 6px;
+}
+
+.bookPg__timeCol {
+  color: #9aa2b6;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookPg__cell {
+  min-height: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.015);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.bookPg__item {
+  border-radius: 10px;
+  padding: 8px 9px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bookPg__item p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bookPg__item small {
+  opacity: 0.85;
+  font-size: 10px;
+}
+
+.bookPg__more {
+  border: 1px dashed var(--fu-border);
+  background: rgba(255, 255, 255, 0.02);
+  color: #c8cfdd;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.bookPg__more:hover {
+  border-color: var(--fu-accent);
+  color: #fff;
+}
+
+.bookPg__item--class {
+  background: #de654d;
+}
+
+.bookPg__item--ems {
+  background: #9b4dff;
+}
+
+.bookPg__item--private {
+  background: #2d7ae5;
+}
+
+.bookPg__form {
+  display: grid;
+  gap: 8px;
+}
+
+.bookPg__slotList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 55vh;
+  overflow: auto;
+}
+
+.bookPg__slotItem {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bookPg__slotOpen {
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 11px;
+}
+
+.bookPg__sessionBody {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bookPg__sessionSub {
+  margin: 0;
+  color: var(--fu-muted);
+  font-size: 14px;
+}
+
+.bookPg__sessionRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bookPg__sessionLabel {
+  color: #a8afbf;
+  font-size: 13px;
+}
+
+.bookPg__pill {
+  width: fit-content;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.bookPg__pill--private {
+  background: #f9684b;
+}
+
+.bookPg__pill--class {
+  background: #de654d;
+}
+
+.bookPg__pill--ems {
+  background: #9b4dff;
+}
+
+.bookPg__sessionActions {
+  display: flex;
+  gap: 10px;
+}
+
+.bookPg__classStatus {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bookPg__classStatus--full {
+  color: #a53a2f;
+  background: rgba(243, 108, 84, 0.2);
+}
+
+.bookPg__classStatus--open {
+  color: #256a45;
+  background: rgba(102, 201, 141, 0.22);
+}
+
+.bookPg__enrollForm {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.bookPg__enrolledList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bookPg__enrolledItem {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 12px;
+}
+
+.bookPg__enrolledItem span {
+  color: #a6aec0;
+}
+
+.bookPg__empty {
+  margin: 0;
+  font-size: 12px;
+  color: #9098ab;
+}
+
+@media (max-width: 980px) {
+  .bookPg__enrollForm {
+    grid-template-columns: 1fr;
+  }
+  .bookPg__enrolledItem {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,295 @@
+.anPg__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.anPg__kpiHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anPg__kpiIcon {
+  color: #f9684b;
+  opacity: 0.9;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(249, 104, 75, 0.12);
+}
+
+.anPg__kpiSub {
+  margin: 6px 0 0;
+  color: #8e96aa;
+  font-size: 12px;
+}
+
+.anPg__kpiSub--up {
+  color: #2fd08d;
+}
+
+.anPg__recent {
+  margin-top: 14px;
+}
+
+.anPg__recent h2,
+.anPg__programs h2 {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+
+.anPg__bars {
+  height: 230px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: end;
+  gap: 10px;
+}
+
+.anPg__barCol {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  height: 100%;
+}
+
+.anPg__barWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  padding: 0 2px 2px;
+}
+
+.anPg__bar {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  background: #f9684b;
+}
+
+.anPg__programs {
+  margin-top: 14px;
+}
+
+.anPg__table td,
+.anPg__table th {
+  font-size: 13px;
+}
+
+.anPg__status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.anPg__status--completed {
+  color: #39d08f;
+  background: rgba(57, 208, 143, 0.16);
+}
+
+.anPg__status--pending {
+  color: #f5c44f;
+  background: rgba(245, 196, 79, 0.18);
+}
+
+.anPg__memberId {
+  color: #8f96a8;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+/* AR Training variant styles */
+.anPg__newBtn {
+  border-radius: 999px;
+  padding-inline: 14px;
+}
+
+.anPg__sessionList {
+  display: grid;
+  gap: 10px;
+}
+
+.anPg__sessionItem {
+  border: 1px solid var(--fu-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 10px;
+}
+
+.anPg__sessionHead {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.anPg__sessionBadge {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #b76aff;
+  background: rgba(143, 78, 255, 0.18);
+}
+
+.anPg__sessionHead h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.anPg__sessionHead p {
+  margin: 2px 0 0;
+  color: #9da5b9;
+  font-size: 12px;
+}
+
+.anPg__sessionHead time {
+  color: #8f96a8;
+  font-size: 12px;
+}
+
+.anPg__progressRow {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.anPg__progressTrack {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(249, 104, 75, 0.2);
+  overflow: hidden;
+}
+
+.anPg__progressTrack span {
+  display: block;
+  height: 100%;
+  background: #f9684b;
+}
+
+.anPg__progressRow strong {
+  font-size: 12px;
+}
+
+.anPg__programGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.anPg__programCard {
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.anPg__programCard h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.anPg__programMeta {
+  margin: 0;
+  color: #ffd15b;
+  font-size: 12px;
+}
+
+.anPg__programFoot {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #98a0b2;
+  font-size: 12px;
+}
+
+.anPg__level {
+  border-radius: 999px;
+  background: rgba(143, 78, 255, 0.18);
+  color: #c9a7ff;
+  padding: 2px 8px;
+}
+
+/* Analytics dashboard (4 charts) */
+.anPg--dashboard .anPg__chartGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.anPg__chartCard {
+  padding: 16px;
+  min-height: 0;
+}
+
+.anPg__chartTitle {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e8ecf4;
+}
+
+.anPg__chartBody {
+  height: 240px;
+  width: 100%;
+}
+
+.anPg__chartBody--pie {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 960px) {
+  .anPg--dashboard .anPg__chartGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .anPg__chartBody--pie {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.anPg__pieLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: #9da5b9;
+  padding-right: 4px;
+}
+
+.anPg__pieLegendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.anPg__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.anPg__dot--retained {
+  background: #f9684b;
+}
+
+.anPg__dot--churned {
+  background: #2a2f3a;
+}
+

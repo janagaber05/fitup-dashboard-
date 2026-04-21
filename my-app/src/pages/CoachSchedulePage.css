@@ -1,0 +1,203 @@
+.coachSch__card {
+  padding: 0;
+  overflow: auto;
+}
+
+.coachSch__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 520px;
+}
+
+.coachSch__table th,
+.coachSch__table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--fu-border);
+  vertical-align: middle;
+}
+
+.coachSch__thToggle {
+  width: 44px;
+}
+
+.coachSch__toggleCell {
+  width: 44px;
+  padding-right: 0 !important;
+}
+
+.coachSch__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--fu-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.coachSch__toggle:hover {
+  background: var(--fu-surface);
+  color: var(--fu-text);
+}
+
+.coachSch__chevron {
+  font-size: 10px;
+  line-height: 1;
+}
+
+.coachSch__row--open {
+  background: rgba(249, 104, 75, 0.06);
+}
+
+.coachSch__sessionTitle {
+  font-weight: 600;
+}
+
+.coachSch__type {
+  text-transform: capitalize;
+  font-size: 12px;
+  color: var(--fu-muted);
+}
+
+.coachSch__detailRow td {
+  padding: 0 !important;
+  border-bottom: 1px solid var(--fu-border);
+  background: var(--fu-bg);
+}
+
+.coachSch__detail {
+  padding: 16px 18px 18px 52px;
+  border-top: 1px solid var(--fu-border);
+}
+
+.coachSch__detailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px 20px;
+}
+
+.coachSch__detailSpan2 {
+  grid-column: 1 / -1;
+}
+
+.coachSch__detailLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+  margin-bottom: 4px;
+}
+
+.coachSch__detailValue {
+  font-size: 14px;
+  color: var(--fu-text);
+}
+
+.coachSch__roster {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--fu-border);
+}
+
+.coachSch__rosterTitle {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.coachSch__rosterTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.coachSch__rosterTable th,
+.coachSch__rosterTable td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--fu-border);
+}
+
+.coachSch__rosterTable th {
+  color: var(--fu-muted);
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.coachSch__mono {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--fu-muted);
+}
+
+.coachSch__rosterEmpty {
+  margin: 14px 0 0;
+  font-size: 12px;
+  color: var(--fu-muted);
+}
+
+.coachSch__clientSection {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--fu-border);
+}
+
+.coachSch__clientCard {
+  border: 1px solid var(--fu-border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: var(--fu-surface);
+}
+
+.coachSch__clientCard--missing {
+  background: rgba(139, 147, 167, 0.08);
+  border-style: dashed;
+}
+
+.coachSch__clientMissingTitle {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.coachSch__mutedSmall {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: var(--fu-muted);
+  line-height: 1.45;
+}
+
+.coachSch__mutedSmall:last-child {
+  margin-bottom: 0;
+}
+
+.coachSch__clientCardHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--fu-border);
+}
+
+.coachSch__clientGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px 16px;
+}
+
+.coachSch__empty {
+  color: var(--fu-muted);
+  text-align: center;
+  padding: 28px !important;
+}

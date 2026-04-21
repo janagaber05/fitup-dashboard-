@@ -1,0 +1,55 @@
+.coachMsgPg .msgPg__sidebar {
+  gap: 14px;
+}
+
+.coachMsgPg__new {
+  padding: 4px 4px 12px;
+  border-bottom: 1px solid var(--fu-border);
+  margin-bottom: 4px;
+}
+
+.coachMsgPg__newTitle {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+}
+
+.coachMsgPg__select,
+.coachMsgPg__textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.coachMsgPg__textarea {
+  resize: vertical;
+  min-height: 72px;
+  line-height: 1.45;
+}
+
+.coachMsgPg__err {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #f9684b;
+}
+
+.coachMsgPg__startBtn {
+  width: 100%;
+}
+
+.coachMsgPg__sub {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--fu-muted);
+}
+
+.coachMsgPg__composer {
+  grid-template-columns: 1fr auto !important;
+}
+
+.coachMsgPg__composerInput {
+  min-width: 0;
+}

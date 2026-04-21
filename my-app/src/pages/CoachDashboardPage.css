@@ -1,0 +1,259 @@
+.coachDash__header p {
+  max-width: 640px;
+}
+
+.coachDash__periodBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 16px;
+  margin-bottom: 4px;
+}
+
+.coachDash__periodTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.coachDash__periodTab {
+  border: 1px solid var(--fu-border);
+  background: var(--fu-bg);
+  color: var(--fu-text);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.coachDash__periodTab:hover {
+  border-color: var(--fu-muted);
+}
+
+.coachDash__periodTab--active {
+  background: var(--fu-accent-dim);
+  border-color: var(--fu-accent);
+  color: var(--fu-accent);
+}
+
+.coachDash__periodNav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coachDash__navBtn {
+  min-width: 40px;
+  padding: 8px 12px !important;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.coachDash__periodLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 200px;
+}
+
+.coachDash__periodLabelMain {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.coachDash__todayLink {
+  border: 0;
+  background: none;
+  color: var(--fu-accent);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 0;
+}
+
+.coachDash__todayLink:hover {
+  color: var(--fu-text);
+}
+
+.coachDash__profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  margin-bottom: 4px;
+}
+
+.coachDash__profile h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.coachDash__muted {
+  margin: 0;
+  font-size: 13px;
+  color: var(--fu-muted);
+}
+
+.coachDash__profileStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.coachDash__statLabel {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+  margin-bottom: 2px;
+}
+
+.coachDash__statValue {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.coachDash__kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.coachDash__kpi {
+  padding: 14px 16px;
+}
+
+.coachDash__kpi .fu-cardTitle {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--fu-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.coachDash__kpi .fu-cardValue {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.coachDash__kpiBranch {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.coachDash__kpiSub {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--fu-muted);
+}
+
+.coachDash__kpiHint {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: var(--fu-muted);
+  opacity: 0.85;
+}
+
+.coachDash__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.coachDash__chartCard,
+.coachDash__listCard,
+.coachDash__tableCard {
+  padding: 16px 18px;
+}
+
+.coachDash__chartCard h2,
+.coachDash__listCard h2,
+.coachDash__tableCard h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.coachDash__chart {
+  height: 240px;
+  margin-top: 12px;
+}
+
+.coachDash__sessionList {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coachDash__sessionList li {
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: var(--fu-bg);
+}
+
+.coachDash__sessionList strong {
+  font-size: 14px;
+}
+
+.coachDash__pill {
+  margin-left: 8px;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--fu-accent-dim);
+  color: var(--fu-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.coachDash__sessionMeta {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--fu-muted);
+}
+
+.coachDash__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.coachDash__table th,
+.coachDash__table td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--fu-border);
+}
+
+.coachDash__empty {
+  color: var(--fu-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 1100px) {
+  .coachDash__kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .coachDash__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,136 @@
+.ctrPg__mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.ctrPg__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.ctrPg__master {
+  margin-bottom: 20px;
+}
+
+.ctrPg__sectionTitle {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.ctrPg__hint {
+  margin: 0 0 12px;
+  color: var(--fu-muted, #888);
+  font-size: 13px;
+}
+
+.ctrPg__fileMeta {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+
+.ctrPg__preview {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.ctrPg__previewFrame {
+  width: 100%;
+  height: 320px;
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.ctrPg__textPreview {
+  margin: 0 0 10px;
+  padding: 12px;
+  max-height: 280px;
+  overflow: auto;
+  font-size: 12px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  background: var(--fu-panel, rgba(0, 0, 0, 0.04));
+}
+
+.ctrPg__history {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.ctrPg__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+
+.ctrPg__filterBtn {
+  border: 1px solid var(--fu-border);
+  background: transparent;
+  color: var(--fu-muted);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ctrPg__filterBtn:hover {
+  color: var(--fu-text);
+  border-color: var(--fu-accent);
+}
+
+.ctrPg__filterBtn--active {
+  background: var(--fu-accent);
+  color: #fff;
+  border-color: var(--fu-accent);
+}
+
+.ctrPg__fullForm {
+  max-height: min(70vh, 560px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.ctrPg__formSection {
+  margin-bottom: 20px;
+}
+
+.ctrPg__dl {
+  margin: 0;
+}
+
+.ctrPg__dlRow {
+  display: grid;
+  grid-template-columns: minmax(120px, 200px) 1fr;
+  gap: 10px 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--fu-border);
+  font-size: 14px;
+}
+
+.ctrPg__dl dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--fu-muted);
+}
+
+.ctrPg__dl dd {
+  margin: 0;
+  color: var(--fu-text);
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.ctrPg__error {
+  margin: 0;
+  font-size: 12px;
+  color: #ff7d7d;
+}

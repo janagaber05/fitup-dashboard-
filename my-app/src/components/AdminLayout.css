@@ -1,0 +1,478 @@
+:root {
+  --fu-bg: #0c0e12;
+  --fu-surface: #12151c;
+  --fu-surface2: #181c26;
+  --fu-border: #232836;
+  --fu-text: #e8eaef;
+  --fu-muted: #8b93a7;
+  --fu-accent: #f9684b;
+  --fu-accent-dim: rgba(249, 104, 75, 0.15);
+  --fu-radius: 12px;
+  --fu-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+  background: var(--fu-bg);
+  color: var(--fu-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.fu-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+  transition: grid-template-columns 0.25s ease;
+}
+
+.fu-shell--collapsed {
+  grid-template-columns: 76px 1fr;
+}
+
+.fu-sidebar {
+  background: linear-gradient(180deg, #0f1116 0%, #0a0c11 100%);
+  border-right: 1px solid var(--fu-border);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+}
+
+.fu-sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--fu-border);
+}
+
+.fu-sidebar__logo {
+  width: auto;
+  height: auto;
+  color: var(--fu-accent);
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.fu-sidebar__title {
+  display: none;
+}
+
+.fu-sidebar__sub {
+  font-size: 11px;
+  color: var(--fu-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.fu-sidebar__nav {
+  padding: 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.fu-navlink {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  color: var(--fu-muted);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  min-width: 0;
+}
+
+.fu-navlink > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fu-navlink:hover {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fu-text);
+  transform: translateX(1px);
+}
+
+.fu-navlink--active {
+  background: linear-gradient(180deg, #ff6d4f 0%, #f9684b 100%);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(249, 104, 75, 0.35);
+}
+
+.fu-navlink__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  color: #9ea6ba;
+  background: transparent;
+  font-size: 0;
+  line-height: 1;
+}
+
+.fu-navlink__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.fu-navlink:hover .fu-navlink__icon {
+  color: #c8cfdd;
+}
+
+.fu-navlink--active .fu-navlink__icon {
+  color: #fff;
+}
+
+.fu-sidebar__footer {
+  border-top: 1px solid var(--fu-border);
+  padding: 12px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fu-sidebar__account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+}
+
+.fu-sidebar__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--fu-accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.fu-sidebar__accountName {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--fu-text);
+}
+
+.fu-sidebar__accountRole {
+  font-size: 12px;
+  color: var(--fu-muted);
+}
+
+.fu-sidebar__logout {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--fu-muted);
+  border-radius: 12px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.fu-sidebar__logout:hover {
+  border-color: var(--fu-border);
+  color: var(--fu-text);
+}
+
+.fu-sidebar__logoutIcon {
+  font-size: 16px;
+}
+
+.fu-sidebar__collapse {
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--fu-border);
+  background: #161a22;
+  color: var(--fu-muted);
+  cursor: pointer;
+  z-index: 3;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.fu-shell--collapsed .fu-navlink {
+  justify-content: center;
+  padding: 10px 6px;
+}
+
+.fu-shell--collapsed .fu-sidebar__brand {
+  padding: 16px 12px;
+}
+
+.fu-shell--collapsed .fu-sidebar__nav {
+  padding: 10px 8px;
+}
+
+.fu-sidebar__collapse:hover {
+  border-color: var(--fu-accent);
+  color: #fff;
+  background: var(--fu-accent);
+}
+
+.fu-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.fu-topbar {
+  height: 64px;
+  border-bottom: 1px solid var(--fu-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: rgba(12, 14, 18, 0.85);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.fu-topbar__burger {
+  display: none;
+  border: 1px solid var(--fu-border);
+  background: var(--fu-surface);
+  color: var(--fu-text);
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.fu-topbar__search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--fu-surface);
+  border: 1px solid var(--fu-border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  min-width: 280px;
+  max-width: 420px;
+  flex: 1;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.fu-topbar__search:focus-within {
+  border-color: var(--fu-accent);
+  box-shadow: 0 0 0 3px var(--fu-accent-dim);
+}
+
+.fu-topbar__search input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: var(--fu-text);
+  font-size: 14px;
+}
+
+.fu-topbar__searchIcon {
+  color: var(--fu-muted);
+  font-size: 14px;
+}
+
+.fu-topbar__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fu-topbar__branch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 4px;
+}
+
+.fu-topbar__branchLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+}
+
+.fu-topbar__branchSelect {
+  min-width: 160px;
+  max-width: 220px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.fu-topbar__crumb {
+  font-size: 12px;
+  color: var(--fu-muted);
+  text-transform: capitalize;
+}
+
+.fu-topbar__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--fu-accent);
+  color: #1a0b08;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.fu-page {
+  padding: 24px;
+  flex: 1;
+}
+
+@media (max-width: 960px) {
+  .fu-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .fu-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 260px;
+    z-index: 20;
+    transform: translateX(-104%);
+    transition: transform 0.22s ease;
+    box-shadow: var(--fu-shadow);
+  }
+
+  .fu-shell--mobileOpen .fu-sidebar {
+    transform: translateX(0);
+  }
+
+  .fu-navlink {
+    justify-content: flex-start;
+    padding: 12px 14px;
+  }
+
+  .fu-topbar__burger {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .fu-topbar__search {
+    min-width: 0;
+  }
+
+  .fu-page {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .fu-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .fu-sidebar__collapse {
+    display: none;
+  }
+
+  .fu-topbar {
+    height: auto;
+    min-height: 56px;
+    padding: 8px 12px;
+    gap: 8px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .fu-topbar__search {
+    width: 100%;
+    max-width: none;
+    padding: 7px 12px;
+  }
+
+  .fu-topbar__meta {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .fu-topbar__branch {
+    margin-right: 0;
+  }
+
+  .fu-topbar__branchSelect {
+    min-width: 120px;
+    max-width: 170px;
+  }
+
+  .fu-page {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .fu-topbar__crumb {
+    display: none;
+  }
+
+  .fu-topbar__branchLabel {
+    display: none;
+  }
+
+  .fu-topbar__branchSelect {
+    min-width: 96px;
+    max-width: 140px;
+    font-size: 11px;
+  }
+}
+
+.fu-sidebar__overlay {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .fu-sidebar__overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    border: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 15;
+    cursor: pointer;
+  }
+}

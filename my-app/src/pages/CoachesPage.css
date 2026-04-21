@@ -1,0 +1,369 @@
+.coachPg__mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+}
+
+.coachPg__addBtn {
+  border-radius: 999px;
+  padding-inline: 14px;
+}
+
+.coachPg__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 14px;
+}
+
+.coachPg__card {
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.coachPg__head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.coachPg__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, #f9684b, #ff8d4f);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.coachPg__avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coachPg__head h3 {
+  margin: 0;
+  font-size: 27px;
+}
+
+.coachPg__specialty {
+  margin: 2px 0 0;
+  color: #a6adbe;
+  font-size: 13px;
+}
+
+.coachPg__rating {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #d2d8e5;
+}
+
+.coachPg__rating span {
+  color: #ffc94d;
+}
+
+.coachPg__meta {
+  margin-top: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.coachPg__meta p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.coachPg__meta span {
+  color: #9aa2b4;
+  font-size: 12px;
+}
+
+.coachPg__meta strong {
+  font-size: 13px;
+  text-align: right;
+}
+
+.coachPg__cardActions {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.coachPg__viewBtn {
+  background: #0d1119;
+  border-color: #0d1119;
+}
+
+.coachPg__scheduleBtn {
+  border-radius: 999px;
+}
+
+.coachPg__empty {
+  margin: 0;
+  color: var(--fu-text-dim);
+}
+
+.coachPg__profile p {
+  margin: 0 0 10px;
+}
+
+.coachPg__modal {
+  max-width: 660px;
+}
+
+.coachPg__profileTop {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin: 4px 0 10px;
+}
+
+.coachPg__profileAvatar {
+  width: 102px;
+  height: 102px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, #ff5d2a, #ff6f32);
+  overflow: hidden;
+}
+
+.coachPg__profileAvatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coachPg__profileName {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.coachPg__profileSpecialty {
+  margin: 6px 0 0;
+  color: #a9b0c0;
+  font-size: 20px;
+}
+
+.coachPg__profileRating {
+  margin: 8px 0 0;
+  font-size: 20px;
+}
+
+.coachPg__profileRating span {
+  color: #ffcb3d;
+}
+
+.coachPg__profileStats {
+  display: grid;
+  gap: 7px;
+  margin: 12px 0 14px;
+}
+
+.coachPg__statRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #d7dce8;
+}
+
+.coachPg__statRow span {
+  color: #a0a8ba;
+}
+
+.coachPg__scheduleBox {
+  border: 1px solid var(--fu-border);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  margin: 8px 0 14px;
+}
+
+.coachPg__scheduleHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.coachPg__scheduleTabs {
+  display: flex;
+  gap: 6px;
+}
+
+.coachPg__tab {
+  border: 1px solid var(--fu-border);
+  background: transparent;
+  color: #aab2c3;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.coachPg__tab--active {
+  color: #fff;
+  border-color: rgba(249, 104, 75, 0.5);
+  background: rgba(249, 104, 75, 0.2);
+}
+
+.coachPg__scheduleTotal {
+  margin: 8px 0;
+  color: #d7deeb;
+}
+
+.coachPg__scheduleRows {
+  display: grid;
+  gap: 6px;
+}
+
+.coachPg__scheduleRows p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coachPg__scheduleRows span {
+  color: #a0a9bc;
+}
+
+.coachPg__sessionDetails {
+  margin-top: 10px;
+  border-top: 1px solid var(--fu-border);
+  padding-top: 8px;
+}
+
+.coachPg__sessionTitle {
+  margin: 0 0 6px;
+  color: #d8deeb;
+  font-size: 13px;
+}
+
+.coachPg__sessionList {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.coachPg__editGrid {
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 14px;
+}
+
+.coachPg__fieldBig {
+  min-height: 110px;
+}
+
+.coachPg__certAdd {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.coachPg__sub {
+  color: var(--fu-text-dim);
+}
+
+.coachPg__members {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.coachPg__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.coachPg__chip {
+  border: 1px solid var(--fu-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: var(--fu-panel);
+  color: var(--fu-text);
+  cursor: pointer;
+}
+
+.coachPg__certGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.coachPg__certThumbWrap {
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0;
+  cursor: pointer;
+}
+
+.coachPg__certThumb {
+  width: 100%;
+  height: 84px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.coachPg__certPreview {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+.coachPg__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.coachPg__danger {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.coachPg__branchHint {
+  grid-column: 1 / -1;
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--fu-muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .coachPg__head h3 {
+    font-size: 20px;
+  }
+  .coachPg__profileName {
+    font-size: 30px;
+  }
+  .coachPg__profileSpecialty,
+  .coachPg__profileRating {
+    font-size: 16px;
+  }
+  .coachPg__profileAvatar {
+    width: 74px;
+    height: 74px;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,347 @@
+.contentForm__bilingual {
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--fu-border);
+}
+
+.contentForm__bilingual:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contentForm__field--arField {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--fu-border);
+}
+
+.contentForm__input--ar,
+.contentForm__field--arField .contentForm__textarea {
+  font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif;
+  text-align: right;
+}
+
+.contentSeo__pair {
+  border-bottom: 1px solid var(--fu-border);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.contentSeo__pair:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contentSeo__previewsRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.contentSeo__previewBox--rtl {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+}
+
+.contentForm__heading,
+.contentSeo__heading {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fu-muted);
+}
+
+.contentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contentForm__field {
+  margin-bottom: 14px;
+}
+
+.contentForm__label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fu-text);
+  margin-bottom: 6px;
+}
+
+.contentForm__hint {
+  margin: 0 0 6px;
+  font-size: 11px;
+  color: var(--fu-muted);
+}
+
+.contentForm__input,
+.contentForm__textarea,
+.contentForm__select {
+  width: 100%;
+  background: var(--fu-bg);
+  border: 1px solid var(--fu-border);
+  border-radius: 12px;
+  padding: 11px 14px;
+  color: var(--fu-text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contentForm__select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.contentForm__textarea {
+  resize: vertical;
+  min-height: 88px;
+  line-height: 1.5;
+}
+
+.contentForm__input:focus,
+.contentForm__textarea:focus,
+.contentForm__select:focus {
+  border-color: var(--fu-accent);
+  box-shadow: 0 0 0 3px var(--fu-accent-dim);
+}
+
+.contentForm__group--nested {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--fu-border);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.contentForm__groupTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--fu-accent);
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.contentForm__array {
+  margin-bottom: 18px;
+}
+
+.contentForm__arrayHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.contentForm__arrayTitleBlock {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contentForm__arrayHint {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--fu-muted);
+  line-height: 1.45;
+  max-width: 420px;
+}
+
+.contentForm__arrayTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--fu-text);
+}
+
+.contentForm__card {
+  border: 1px solid var(--fu-border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: var(--fu-surface2);
+}
+
+.contentForm__cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--fu-border);
+}
+
+.contentForm__cardBadge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+}
+
+.contentForm__addBtn {
+  border: 1px dashed rgba(249, 104, 75, 0.45);
+  background: transparent;
+  color: var(--fu-accent);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.contentForm__addBtn:hover {
+  background: var(--fu-accent-dim);
+  border-style: solid;
+}
+
+.contentForm__addBtn--block {
+  width: 100%;
+}
+
+.contentForm__removeBtn {
+  border: 0;
+  background: rgba(249, 104, 75, 0.12);
+  color: var(--fu-accent);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contentForm__removeBtn:hover {
+  background: rgba(249, 104, 75, 0.22);
+}
+
+.contentForm__empty {
+  font-size: 13px;
+  color: var(--fu-muted);
+  margin: 0;
+}
+
+.contentSeo {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--fu-border);
+}
+
+.contentSeo__intro {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: var(--fu-muted);
+  line-height: 1.5;
+}
+
+.contentSeo__intro strong {
+  color: var(--fu-text);
+}
+
+.contentSeo__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contentSeo__preview {
+  margin-top: 18px;
+}
+
+.contentSeo__previewLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+  margin-bottom: 8px;
+}
+
+.contentSeo__previewBox {
+  border: 1px solid var(--fu-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  color: #202124;
+}
+
+.contentSeo__pt {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: #1a0dab;
+  font-weight: 500;
+}
+
+.contentSeo__pu {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: #006621;
+}
+
+.contentSeo__pd {
+  margin: 0;
+  font-size: 13px;
+  color: #545454;
+  line-height: 1.45;
+}
+
+/* Partner application form editor */
+.contentForm--partnerForm {
+  gap: 12px;
+}
+
+.contentForm__intro {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--fu-muted);
+}
+
+.contentForm__subheading {
+  margin: 20px 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-text);
+}
+
+.contentForm__subheading:first-of-type {
+  margin-top: 0;
+}
+
+.contentForm__partnerBlock {
+  margin-bottom: 8px;
+}
+
+.contentForm__card--tight {
+  margin-bottom: 12px;
+}
+
+.contentForm__bilingual--stack {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--fu-border);
+}
+
+.contentForm__bilingual--stack:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contentForm__fieldRow {
+  margin-bottom: 12px;
+}
+
+.contentForm__input--mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+}

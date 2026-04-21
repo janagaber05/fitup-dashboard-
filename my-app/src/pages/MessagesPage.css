@@ -1,0 +1,257 @@
+.msgPg--chat {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.msgPg__layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 16px;
+  min-height: 620px;
+}
+
+.msgPg__sidebar,
+.msgPg__chat {
+  padding: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.08));
+}
+
+.msgPg__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msgPg__searchWrap {
+  padding: 4px;
+}
+
+.msgPg__search {
+  border-radius: 12px;
+  background: #12151c;
+}
+
+.msgPg__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.msgPg__row {
+  width: 100%;
+  border: 1px solid transparent;
+  background: #171a22;
+  border-radius: 12px;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.msgPg__row:hover {
+  border-color: #2e3444;
+}
+
+.msgPg__row--active {
+  border-color: #ff6a4d;
+  background: #1f232d;
+}
+
+.msgPg__avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #ff6a4d;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.msgPg__avatar--head {
+  width: 40px;
+  height: 40px;
+}
+
+.msgPg__rowMain {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.msgPg__rowTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.msgPg__rowTop strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f2f5ff;
+}
+
+.msgPg__rowTop time {
+  font-size: 11px;
+  color: #8f98ab;
+  white-space: nowrap;
+}
+
+.msgPg__preview {
+  color: #9ca6bc;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.msgPg__dot {
+  color: #ff6a4d;
+  font-size: 13px;
+  line-height: 1;
+  margin-left: 4px;
+}
+
+.msgPg__chat {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 12px;
+}
+
+.msgPg__chatHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4px 4px 12px;
+}
+
+.msgPg__chatHead h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.msgPg__chatHead p {
+  margin: 2px 0 0;
+  color: #8f98ab;
+  font-size: 12px;
+}
+
+.msgPg__thread {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 6px 4px;
+}
+
+.msgPg__bubbleWrap {
+  display: flex;
+}
+
+.msgPg__bubbleWrap--in {
+  justify-content: flex-start;
+}
+
+.msgPg__bubbleWrap--out {
+  justify-content: flex-end;
+}
+
+.msgPg__bubble {
+  max-width: min(76%, 560px);
+  border-radius: 14px;
+  padding: 10px 12px 8px;
+}
+
+.msgPg__bubble p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.msgPg__bubble time {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  opacity: 0.72;
+}
+
+.msgPg__bubbleMeta {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.msgPg__bubble--incoming {
+  background: #0f1219;
+  border: 1px solid #202735;
+  color: #f2f5ff;
+}
+
+.msgPg__bubble--outgoing {
+  background: linear-gradient(135deg, #ff784f, #ff5f45);
+  color: #fff;
+}
+
+.msgPg__composer {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.msgPg__replyMode {
+  border-radius: 999px;
+}
+
+.msgPg__composerInput {
+  border-radius: 999px;
+  background: #12151c;
+}
+
+.msgPg__send {
+  min-width: 92px;
+  border-radius: 999px;
+}
+
+.msgPg__empty {
+  margin: 0;
+  color: #8f98ab;
+  font-size: 14px;
+  padding: 12px;
+}
+
+@media (max-width: 1060px) {
+  .msgPg__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .msgPg__sidebar {
+    max-height: 360px;
+  }
+
+  .msgPg__chat {
+    min-height: 500px;
+  }
+
+  .msgPg__composer {
+    grid-template-columns: 1fr;
+  }
+}

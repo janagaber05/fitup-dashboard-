@@ -1,0 +1,39 @@
+.coachSetPg .coachSet__dl {
+  margin: 12px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 12px 20px;
+}
+
+.coachSetPg .coachSet__dl > div {
+  margin: 0;
+}
+
+.coachSetPg .coachSet__dl dt {
+  margin: 0 0 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8f98ab;
+}
+
+.coachSetPg .coachSet__dl dd {
+  margin: 0;
+  font-size: 15px;
+  color: #e8ecf4;
+}
+
+.coachSetPg .coachSet__mono {
+  font-family: ui-monospace, monospace;
+  font-size: 13px;
+}
+
+.coachSetPg .coachSet__formSpacer {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .coachSetPg .coachSet__dl {
+    grid-template-columns: 1fr;
+  }
+}

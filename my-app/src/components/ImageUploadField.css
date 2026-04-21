@@ -1,0 +1,84 @@
+.imgUp {
+  margin-bottom: 4px;
+}
+
+.imgUp__label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fu-text);
+  margin-bottom: 8px;
+}
+
+.imgUp__label--sub {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  color: var(--fu-muted);
+  font-weight: 500;
+}
+
+.imgUp__preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.imgUp__preview img {
+  max-width: min(100%, 280px);
+  max-height: 160px;
+  border-radius: 12px;
+  object-fit: contain;
+  border: 1px solid var(--fu-border);
+  background: var(--fu-bg);
+}
+
+.imgUp__clear {
+  align-self: center;
+}
+
+.imgUp__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.imgUp__file {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.imgUp__hint {
+  font-size: 11px;
+  color: var(--fu-muted);
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+.imgUp__url {
+  width: 100%;
+  background: var(--fu-bg);
+  border: 1px solid var(--fu-border);
+  border-radius: 12px;
+  padding: 11px 14px;
+  color: var(--fu-text);
+  font-size: 14px;
+  outline: none;
+}
+
+.imgUp__url:focus {
+  border-color: var(--fu-accent);
+  box-shadow: 0 0 0 3px var(--fu-accent-dim);
+}
+
+.imgUp__error {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--fu-accent);
+}

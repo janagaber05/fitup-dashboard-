@@ -1,0 +1,435 @@
+.pgymPg__overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pgymPg__overviewCard {
+  padding: 14px;
+}
+
+.pgymPg__overviewLabel {
+  margin: 0;
+  color: var(--fu-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pgymPg__overviewValue {
+  margin: 6px 0 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--fu-text);
+}
+
+.pgymPg__gymGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.pgymPg__gymCard {
+  padding: 16px;
+}
+
+.pgymPg__gymCardActions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.pgymPg__gymCard h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.pgymPg__gymMeta {
+  margin: 6px 0 12px;
+  font-size: 13px;
+  color: #9da5b9;
+}
+
+.pgymPg__gymId {
+  margin: -4px 0 10px;
+  font-size: 12px;
+  color: #8f98ab;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.pgymPg__gymContact {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.pgymPg__gymContact dt {
+  margin: 0;
+  font-size: 11px;
+  color: var(--fu-muted);
+  text-transform: uppercase;
+}
+
+.pgymPg__gymContact dd {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #c4cad8;
+}
+
+.pgymPg__gymDetails {
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--fu-border);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 10px 12px;
+}
+
+.pgymPg__gymDetails dt {
+  margin: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--fu-muted);
+  letter-spacing: 0.04em;
+}
+
+.pgymPg__gymDetails dd {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #d2d8e5;
+}
+
+.pgymPg__gymDetailsWide {
+  grid-column: 1 / -1;
+}
+
+.pgymPg__contractLink {
+  color: #8ec8ff;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.pgymPg__branchMiniList {
+  border-top: 1px solid var(--fu-border);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.pgymPg__branchMiniTitle {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--fu-muted);
+  letter-spacing: 0.04em;
+}
+
+.pgymPg__branchMiniList ul {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.pgymPg__branchMiniList li {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pgymPg__branchMiniList li strong {
+  font-size: 13px;
+  color: #e8ecf4;
+}
+
+.pgymPg__branchMiniList li span {
+  font-size: 12px;
+  color: #a9b2c3;
+}
+
+.pgymPg__branchMiniList li small {
+  font-size: 11px;
+  color: #8f98ab;
+}
+
+.pgymPg__sectionHeading {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #cdd3e0;
+}
+
+.pgymPg__branchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.pgymPg__branchCard {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.pgymPg__branchTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.pgymPg__branchIconWrap {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(224, 69, 69, 0.12);
+  color: #e04545;
+}
+
+.pgymPg__buildingIcon {
+  display: block;
+}
+
+.pgymPg__branchName {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--fu-text);
+}
+
+.pgymPg__branchContacts {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.pgymPg__branchContacts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #9da5b9;
+  line-height: 1.4;
+}
+
+.pgymPg__branchDetail {
+  margin: 0 0 16px;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--fu-border);
+  display: grid;
+  gap: 8px;
+}
+
+.pgymPg__branchDetail > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+
+.pgymPg__branchDetail dt {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fu-muted);
+}
+
+.pgymPg__branchDetail dd {
+  margin: 0;
+  font-size: 12px;
+  color: #c4cad8;
+  line-height: 1.35;
+}
+
+.pgymPg__branchDetail--wide {
+  grid-column: 1 / -1;
+}
+
+.pgymPg__contactIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #7a8296;
+}
+
+.pgymPg__branchStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-top: 4px;
+}
+
+.pgymPg__branchStats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pgymPg__statLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--fu-muted);
+}
+
+.pgymPg__statValue {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--fu-text);
+}
+
+.pgymPg__manageBtn {
+  width: 100%;
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--fu-border);
+}
+
+.pgymPg__manageBtn:hover {
+  border-color: var(--fu-accent);
+  background: rgba(249, 104, 75, 0.08);
+}
+
+.pgymPg__addForm {
+  display: grid;
+  gap: 8px;
+}
+
+.pgymPg__addBranchHint {
+  grid-column: 1 / -1;
+  margin: -4px 0 4px;
+  font-size: 12px;
+  color: var(--fu-muted);
+  line-height: 1.35;
+}
+
+.pgymPg__manageForm textarea {
+  align-self: start;
+  min-height: 72px;
+}
+
+.pgymPg__stats {
+  margin-bottom: 20px;
+}
+
+.pgymPg__mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}
+
+.pgymPg__manage {
+  display: grid;
+  gap: 10px;
+}
+
+.pgymPg__manage p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.pgymPg__sectionTitle {
+  margin: 14px 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+}
+
+.pgymPg__paymentForm {
+  display: grid;
+  gap: 8px;
+}
+
+.pgymPg__muted {
+  margin: 0;
+  color: var(--fu-muted);
+  font-size: 12px;
+}
+
+.pgymPg__contractActions {
+  display: flex;
+  gap: 8px;
+}
+
+.pgymPg__contractPreview {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  background: #0f1117;
+}
+
+.pgymPg__contractFrame {
+  width: 100%;
+  height: 300px;
+  border: 1px solid var(--fu-border);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.pgymPg__tinyBtn {
+  margin-left: 8px;
+  padding: 4px 8px;
+  font-size: 11px;
+}
+
+.pgymPg__refPreview {
+  display: block;
+  margin-top: 8px;
+  max-width: 220px;
+  max-height: 120px;
+  border: 1px solid var(--fu-border);
+  border-radius: 8px;
+}
+
+.pgymPg__manageForm {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.35fr) minmax(0, 1fr);
+  column-gap: 14px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.pgymPg__manageSub {
+  grid-column: 1 / -1;
+  margin: 0 0 6px;
+  color: var(--fu-muted);
+  font-size: 13px;
+}
+
+.pgymPg__fieldLabel {
+  font-size: 13px;
+  color: #cfd3df;
+  padding-right: 6px;
+}
+
+.pgymPg__contractWarning {
+  grid-column: 1 / -1;
+  margin: 4px 0 0;
+  color: #ffb35c;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .pgymPg__manageForm {
+    grid-template-columns: 1fr;
+  }
+
+  .pgymPg__fieldLabel {
+    padding-right: 0;
+    margin-top: 4px;
+  }
+}

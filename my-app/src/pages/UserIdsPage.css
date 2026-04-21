@@ -1,0 +1,26 @@
+.uidPg__mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}
+
+.uidPg__profile p {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.uidPg__list {
+  margin: 0 0 12px;
+  padding-left: 18px;
+}
+
+.uidPg__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.uidPg__danger {
+  border-color: #ef4444;
+  color: #ef4444;
+}

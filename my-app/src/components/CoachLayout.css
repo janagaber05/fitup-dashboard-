@@ -1,0 +1,65 @@
+.coachShell__sidebar {
+  border-right-color: rgba(249, 104, 75, 0.2);
+}
+
+.coachShell__badge {
+  margin: 0 16px 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fu-accent);
+  background: var(--fu-accent-dim);
+  border: 1px solid rgba(249, 104, 75, 0.35);
+}
+
+.coachShell__avatar {
+  background: linear-gradient(135deg, #ff8a5c, #f9684b) !important;
+}
+
+.coachShell__topbar {
+  height: auto;
+  min-height: 64px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: center;
+}
+
+.coachShell__topTitle {
+  padding: 4px 0;
+}
+
+.coachShell__topHeading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.coachShell__topSub {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--fu-muted);
+}
+
+.coachShell__navLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.coachShell__navBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  background: #f9684b;
+  color: #1a0b08;
+}

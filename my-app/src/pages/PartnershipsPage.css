@@ -1,0 +1,156 @@
+.partPg__reason {
+  max-width: 280px;
+  font-size: 12px;
+  color: var(--fu-muted);
+  line-height: 1.4;
+}
+
+.partPg__sectionTitle {
+  margin: 28px 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--fu-text);
+}
+
+.partPg__sectionLead {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--fu-muted);
+  line-height: 1.45;
+  max-width: 42rem;
+}
+
+.partPg__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+
+.partPg__filterBtn {
+  border: 1px solid var(--fu-border);
+  background: transparent;
+  color: var(--fu-muted);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.partPg__filterBtn:hover {
+  color: var(--fu-text);
+  border-color: var(--fu-accent);
+}
+
+.partPg__filterBtn--active {
+  background: var(--fu-accent);
+  color: #fff;
+  border-color: var(--fu-accent);
+}
+
+.partPg__tableWrap {
+  margin-bottom: 8px;
+}
+
+.partPg__nowrap {
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.partPg__code {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--fu-bg, #f4f4f5);
+}
+
+.partPg__fullForm {
+  max-height: min(70vh, 560px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.partPg__meta {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: var(--fu-text);
+}
+
+.partPg__metaSep {
+  margin: 0 8px;
+  color: var(--fu-muted);
+}
+
+.partPg__formSection {
+  margin-bottom: 20px;
+}
+
+.partPg__formSectionTitle {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fu-muted);
+}
+
+.partPg__dl {
+  margin: 0;
+}
+
+.partPg__dlRow {
+  display: grid;
+  grid-template-columns: minmax(120px, 200px) 1fr;
+  gap: 10px 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--fu-border);
+  font-size: 14px;
+}
+
+.partPg__dlRow:last-child {
+  border-bottom: 0;
+}
+
+.partPg__dl dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--fu-muted);
+}
+
+.partPg__dl dd {
+  margin: 0;
+  color: var(--fu-text);
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+.partPg__onboardForm {
+  display: grid;
+  gap: 10px;
+}
+
+.partPg__inlineActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.partPg__check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--fu-text);
+}
+
+.partPg__hint {
+  margin: 0;
+  font-size: 12px;
+  color: var(--fu-muted);
+}
+
+.partPg__error {
+  margin: 0;
+  font-size: 12px;
+  color: #ff7d7d;
+}
